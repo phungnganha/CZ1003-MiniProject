@@ -1,4 +1,4 @@
-def get_username():
+def get_username(): 
     username_input = input('Username: ')
     valid_username = check_username(username_input)
     if valid_username == 'invalid':
@@ -7,7 +7,7 @@ def get_username():
     else:
         return valid_username
 
-def check_username(username_input):
+def check_username(username_input):  #validate
     try:
         username_list = []
         with open("login_history.txt", 'r') as File:  # read the file only
